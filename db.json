@@ -1,0 +1,91 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "$2b$10$flyOdirb8OvQeh8pAunY7.iezAsOIWUTpgGqetq90oxjAU2Hud.cW",
+      "role": "admin",
+      "createdAt": "2025-01-23T04:47:33.741Z"
+    },
+    {
+      "id": "2",
+      "username": "user",
+      "password": "$2b$10$Zqvh.1DZeKkyv5ZkKztJ1eJHdgUBAoK4YJ65KdtCPOuiETaGCmgc2",
+      "role": "user",
+      "createdAt": "2025-01-23T04:47:33.741Z"
+    },
+    {
+      "id": "1737611803843",
+      "username": "hello",
+      "password": "$2b$10$4xrST0Iaul6d.cNIjAfgSOD0r2hhg/GMaUH0kZv4iTOsRDrpQ8xaG",
+      "role": "user",
+      "createdAt": "2025-01-23T05:56:43.843Z"
+    }
+  ],
+  "submissions": [
+    {
+      "id": "1737608581364",
+      "userId": "2",
+      "files": {
+        "html": {
+          "name": "index.html",
+          "content": ""
+        },
+        "css": {
+          "name": "style.css",
+          "content": ""
+        },
+        "js": {
+          "name": "script.js",
+          "content": ""
+        }
+      },
+      "submittedAt": "2025-01-23T05:03:01.364Z",
+      "status": "reviewed",
+      "feedback": "asd"
+    },
+    {
+      "id": "1737609138268",
+      "userId": "2",
+      "files": {
+        "html": {
+          "name": "index.html",
+          "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Basic HTML, CSS, JS</title>\r\n    <link rel=\"stylesheet\" href=\"style.css\">\r\n</head>\r\n<body>\r\n    <div class=\"container\">\r\n        <h1>Welcome to My Page</h1>\r\n        <p>Click the button below to see the magic happen!</p>\r\n        <button id=\"myButton\">Click Me!</button>\r\n        <p id=\"message\" class=\"hidden\">Hello, this is your message!</p>\r\n    </div>\r\n    <script src=\"script.js\"></script>\r\n</body>\r\n</html>\r\n"
+        },
+        "css": {
+          "name": "style.css",
+          "content": "document.getElementById('myButton').addEventListener('click', function () {\r\n    const message = document.getElementById('message');\r\n    message.classList.toggle('hidden');\r\n});\r\n"
+        },
+        "js": {
+          "name": "script.js",
+          "content": "body {\r\n    font-family: Arial, sans-serif;\r\n    margin: 0;\r\n    padding: 0;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    height: 100vh;\r\n    background-color: #f4f4f9;\r\n    color: #333;\r\n}\r\n\r\n.container {\r\n    text-align: center;\r\n    padding: 20px;\r\n    border: 2px solid #ccc;\r\n    border-radius: 10px;\r\n    background-color: #fff;\r\n    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\nbutton {\r\n    padding: 10px 20px;\r\n    font-size: 16px;\r\n    color: #fff;\r\n    background-color: #007BFF;\r\n    border: none;\r\n    border-radius: 5px;\r\n    cursor: pointer;\r\n}\r\n\r\nbutton:hover {\r\n    background-color: #0056b3;\r\n}\r\n\r\n.hidden {\r\n    display: none;\r\n}\r\n\r\n#message {\r\n    margin-top: 20px;\r\n    font-size: 18px;\r\n    color: #28a745;\r\n}\r\n"
+        }
+      },
+      "submittedAt": "2025-01-23T05:12:18.268Z",
+      "status": "reviewed",
+      "feedback": "sai"
+    },
+    {
+      "id": "1737609506357",
+      "userId": "2",
+      "files": {
+        "html": {
+          "name": "index.html",
+          "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Basic HTML, CSS, JS</title>\r\n    <link rel=\"stylesheet\" href=\"style.css\">\r\n</head>\r\n<body>\r\n    <div class=\"container\">\r\n        <h1>Welcome to My Page</h1>\r\n        <p>Click the button below to see the magic happen!</p>\r\n        <button id=\"myButton\">Click Me!</button>\r\n        <p id=\"message\" class=\"hidden\">Hello, this is your message!</p>\r\n    </div>\r\n    <script src=\"script.js\"></script>\r\n</body>\r\n</html>\r\n"
+        },
+        "css": {
+          "name": "style.css",
+          "content": "body {\r\n    font-family: Arial, sans-serif;\r\n    margin: 0;\r\n    padding: 0;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    height: 100vh;\r\n    background-color: #f4f4f9;\r\n    color: #333;\r\n}\r\n\r\n.container {\r\n    text-align: center;\r\n    padding: 20px;\r\n    border: 2px solid #ccc;\r\n    border-radius: 10px;\r\n    background-color: #fff;\r\n    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\nbutton {\r\n    padding: 10px 20px;\r\n    font-size: 16px;\r\n    color: #fff;\r\n    background-color: #007BFF;\r\n    border: none;\r\n    border-radius: 5px;\r\n    cursor: pointer;\r\n}\r\n\r\nbutton:hover {\r\n    background-color: #0056b3;\r\n}\r\n\r\n.hidden {\r\n    display: none;\r\n}\r\n\r\n#message {\r\n    margin-top: 20px;\r\n    font-size: 18px;\r\n    color: #28a745;\r\n}\r\n"
+        },
+        "js": {
+          "name": "script.js",
+          "content": "document.getElementById('myButton').addEventListener('click', function () {\r\n    const message = document.getElementById('message');\r\n    message.classList.toggle('hidden');\r\n});"
+        }
+      },
+      "submittedAt": "2025-01-23T05:18:26.357Z",
+      "status": "reviewed",
+      "feedback": "Bài làm tốt!"
+    }
+  ],
+  "lessons": []
+}

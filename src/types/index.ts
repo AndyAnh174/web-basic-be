@@ -1,3 +1,5 @@
+import { Request } from 'express';
+
 export interface User {
   id: string;
   username: string;
@@ -10,15 +12,25 @@ export interface Submission {
   id: string;
   userId: string;
   files: {
-    html?: string;
-    css?: string;
-    js?: string;
+    html?: {
+      name: string;
+      content: string;
+    };
+    css?: {
+      name: string;
+      content: string;
+    };
+    js?: {
+      name: string;
+      content: string;
+    };
   };
   submittedAt: Date;
   status: 'pending' | 'reviewed';
+  feedback?: string;
 }
 
-export interface AuthRequest extends Express.Request {
+export interface AuthRequest extends Request {
   user?: {
     id: string;
     role: string;

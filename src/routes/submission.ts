@@ -4,7 +4,8 @@ import {
   createSubmission,
   getAllSubmissions,
   getUserSubmissions,
-  getSubmissionById
+  getSubmissionById,
+  reviewSubmission
 } from '../controllers/submission';
 
 export const submissionRouter = Router();
@@ -15,4 +16,5 @@ submissionRouter.get('/my-submissions', authenticate, getUserSubmissions);
 
 // Admin routes
 submissionRouter.get('/', authenticate, requireAdmin, getAllSubmissions);
-submissionRouter.get('/:id', authenticate, requireAdmin, getSubmissionById); 
+submissionRouter.get('/:id', authenticate, requireAdmin, getSubmissionById);
+submissionRouter.post('/:id/review', authenticate, requireAdmin, reviewSubmission); 
